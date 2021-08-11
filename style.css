@@ -5,7 +5,7 @@
 body{
     margin: 0%;
 
-    background-image: url(/spreat_islam/flowersBG.jpg);
+    background-image: url(/flowersBG.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -87,8 +87,8 @@ body{
 }
 /* main section  */
 main{
-    background-color: rgba(0, 0, 0, 0.541);
-    /* padding-left: 25px; */
+    background-color: rgba(0, 0, 0, 0.562);
+    padding-left: 25px;
     color: white;
 }
 
