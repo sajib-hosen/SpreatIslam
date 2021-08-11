@@ -1,0 +1,127 @@
+/* common style  */
+/* *{
+    border: 1px dashed red;
+} */
+body{
+    margin: 0%;
+
+    background-image: url(/spreat_islam/flowersBG.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+}
+/* nav container  */
+.navCont{
+    height: 100%;
+}
+.navCont img{
+    height: auto;
+    width: 100%;
+}
+.navCont .textArea{
+    position: fixed;
+    top: 0%;
+    right: 99%;
+    width: 30%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(29, 0, 36, 0.842);
+    border-right: 15px solid blueviolet;
+    transition: 1s ease-in-out;
+    text-align: center;
+    white-space: nowrap;
+    color: white;
+}
+.navCont:hover .textArea{
+    right: 80%;
+    width: 22%;
+}
+.textArea ul{
+    padding-left: 0%;
+}
+.textArea li{
+    list-style: none;
+    padding: 12px;
+}
+.textArea li:hover{
+    background-color: rgba(0, 0, 0, 0.842);
+    transition: 1s ease;
+}
+
+
+
+@media only screen and (max-width:1024px) {
+    .navCont .textArea{
+        right: 98%;
+    }
+    .navCont:hover .textArea{
+        right: 70%;
+        width: 30%;
+    }
+    main{
+        padding-left: 13px;
+    }
+    .navCont:hover .textArea{
+        right: 70%;
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width:414px) {
+    .navCont .textArea{
+        right: 96%;
+    }
+    .navCont:hover .textArea{
+        right: 60%;
+        width: 30%;
+    }
+    main{
+        padding-left: 15px;
+    }
+    .navCont:hover .textArea{
+        right: 50%;
+        width: 50%;
+    }
+}
+/* main section  */
+main{
+    background-color: rgba(0, 0, 0, 0.541);
+    /* padding-left: 25px; */
+    color: white;
+}
+
+/* search  */
+.searchBox{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+    padding-top: 15px;
+}
+
+.fas{
+    margin-right: 5px;
+}
+.searchBox p{
+    font-size: 20px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    vertical-align: center;
+    border-right: 8px solid lawngreen;
+    color: turquoise;
+}
+.searchBox input{
+    height: 35px;
+    width: 0px;
+    border-style: none;
+}
+.searchBox:hover p{
+    color: white;
+    /* width: 150px; */
+    transition: 1s ease;
+}
+.searchBox:hover #search01{
+    width: 120px;
+    transition: 2s ease-in-out;
+}
