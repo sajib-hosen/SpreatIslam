@@ -4,12 +4,7 @@
 } */
 body{
     margin: 0%;
-
-    background-image: url(/flowersBG.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    background-color: rgb(194, 196, 199);
     font-family: 'Poppins', sans-serif;
 }
 /* nav container  */
@@ -26,7 +21,7 @@ body{
     right: 99%;
     width: 30%;
     height: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
     background-color: rgba(29, 0, 36, 0.842);
     border-right: 15px solid blueviolet;
     transition: 1s ease-in-out;
@@ -35,7 +30,7 @@ body{
     color: white;
 }
 .navCont:hover .textArea{
-    right: 80%;
+    right: 78%;
     width: 22%;
 }
 .textArea ul{
@@ -43,14 +38,13 @@ body{
 }
 .textArea li{
     list-style: none;
-    padding: 12px;
+    /* padding: 12px; */
 }
 .textArea li:hover{
     background-color: rgba(0, 0, 0, 0.842);
-    transition: 1s ease;
+    border-bottom: 3px solid rgb(181, 0, 252);
+    transition: background-color 1s ease;
 }
-
-
 
 @media only screen and (max-width:1024px) {
     .navCont .textArea{
@@ -85,43 +79,139 @@ body{
         width: 50%;
     }
 }
-/* main section  */
-main{
-    background-color: rgba(0, 0, 0, 0.562);
-    padding-left: 25px;
+
+
+
+/* ---------------------
+      NAVIGATION BAR
+----------------------- */
+nav {
+    padding: 0%;
+    margin: 0%;
+}
+nav a{
+    text-decoration: none;
+    padding: 15px;
+    display: block;
     color: white;
 }
 
-/* search  */
+.nav-ul{
+    margin: 0;
+}
+.d-down{ 
+    display: none;
+    left: 200px;
+    text-align: start;
+}
+.d-down li{
+    position: relative;
+    background-color: rgba(56, 54, 51, 0.747);
+}
+ 
+nav > ul > li:hover > ul { 
+    display: block;
+    position: absolute;
+    padding: 0;
+}
+
+nav li{
+    list-style-type: none;
+    padding: 0%;
+}
+
+/* END NAV  */
+
+
+.pad{
+    padding-left: 25px;
+}
+.pad-ar{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+
+/* search area  */
+.sarchAccount{
+    display: flex;
+    justify-content: space-between;
+}
+.acc{
+    display: flex;
+}
+.acc p{
+    margin-left: 10px;
+}
+
+
+.searchBox *{
+    border-bottom: 3px solid rgb(181, 0, 252);
+}
 .searchBox{
     display: flex;
-    justify-content: flex-end;
-    margin-right: 30px;
-    padding-top: 15px;
+}
+.searchBox p:nth-child(2) {
+    margin-left: 10px;
+}
+.searchBox > p > input{
+    border-style: none;
+    background-color: rgb(194, 196, 199);
+}
+.searchBox > p > select{
+    border-style: none;
+    background-color: rgb(194, 196, 199);
 }
 
-.fas{
-    margin-right: 5px;
+
+
+/* baner image and text  */
+
+.baner{
+    background-image: url(/webBus/flowersBG.jpg);
+    background-position:bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
-.searchBox p{
-    font-size: 20px;
-    margin-top: 0%;
-    margin-bottom: 0%;
-    vertical-align: center;
-    border-right: 8px solid lawngreen;
-    color: turquoise;
-}
-.searchBox input{
-    height: 35px;
-    width: 0px;
-    border-style: none;
-}
-.searchBox:hover p{
+.txtPart{
     color: white;
-    /* width: 150px; */
-    transition: 1s ease;
+    text-align: center;
+    padding: 100px;
+    background-color: rgba(0, 0, 0, 0.658);
+    word-spacing: 10px;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 12px blue;
 }
-.searchBox:hover #search01{
-    width: 120px;
-    transition: 2s ease-in-out;
+
+/* card / dashboard design  */
+
+/* .dashBord *{
+    border: 1px dashed red;
+} */
+
+.dashBord{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: auto auto;
+    margin: 20px;
+}
+.cardBg{
+    background-color: white;
+    box-shadow: 0px 0px 10px black;
+}
+
+.cardImgs{
+    height: 250px;
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+}
+
+/* footer  */
+footer{
+    color: white;
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(44, 40, 40);
 }
